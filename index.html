@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .product-details, .about-us, .contact-form, .product-catalog {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .product-details img, .product-catalog img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-info, .product-item {
+            margin: 1em 0;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form label, .contact-form input, .contact-form textarea, .contact-form button {
+            margin-bottom: 0.5em;
+            padding: 0.5em;
+        }
+
+        .contact-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Company Name</h1>
+        <nav>
+            <ul>
+                <li><a href="#product-page">Product</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="#product-catalog">Product Catalog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Product Page -->
+        <section id="product-page" class="product-details">
+            <h2>Product Page</h2>
+            <img src="product-image.jpg" alt="Product Image">
+            <div class="product-info">
+                <h2>Product Name</h2>
+                <p>Product Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Price: $99.99</p>
+            </div>
+        </section>
+
+        <!-- About Us Page -->
+        <section id="about-us" class="about-us">
+            <h2>About Us</h2>
+            <p>We are a company dedicated to providing the best products and services to our customers. Our journey began in [Year] with a mission to [Mission Statement].</p>
+            <h2>Our Team</h2>
+            <p>Meet the team that makes it all happen: [Team Members]</p>
+        </section>
+
+        <!-- Contact Page with Registration Form -->
+        <section id="contact-us" class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <h2>Register</h2>
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <!-- Product Catalog -->
+        <section id="product-catalog" class="product-catalog">
+            <h2>Product Catalog</h2>
+            <div class="product-item">
+                <img src="product1.jpg" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>Description of product 1.</p>
+            </div>
+            <div class="product-item">
+                <img src="product2.jpg" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>Description of product 2.</p>
+            </div>
+            <!-- Add more product items as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Your Company Name</p>
+    </footer>
+</body>
+</html>
